@@ -1,4 +1,4 @@
-# co26149ba94bfe3344e0a3df6
+# Figma Practice - Responsive Signup Page
 
 Quick start:
 
