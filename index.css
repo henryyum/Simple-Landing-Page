@@ -1,0 +1,120 @@
+html, body, h1, input, button, p{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: grid;
+    place-items: center;
+    background-color: lightgray;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    height: 100%;
+    width: 100%;
+    background-color: white;
+}
+
+.input-container {
+    padding: 6.75rem 2.8125rem;
+}
+
+label {
+    display: block;
+    margin-bottom: 1rem;
+}
+
+.inputWrapper input,
+.inputWrapper button {
+    padding: 1rem;
+    width: 100%;
+}
+.input-container input {
+    background-color: #EDEDED;
+    border: 1px solid #C7C7C7;
+    margin-bottom: 2.5rem;
+}
+
+.input-container input:hover,
+.input-container button:hover {
+    cursor: pointer;
+}
+
+.input-container button {
+    background-color: #5200FF;
+    border: none;
+    font-size: 1.125rem;
+    color: white;
+}
+
+
+
+.header {
+    padding: 6.75rem 2.8125rem;
+    text-align: center;
+    position: relative;
+    background-color: #5200FF;
+}
+
+.header:before {
+    background-image: url('bg.jpg');
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    opacity: 22%;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    content: '';
+}
+
+.header h1 {
+    font-family: 'Bebas Neue', sans-serif;
+    position: relative;
+    color: white;
+    font-size: 4rem;
+    line-height: 1.2em;
+}
+
+.header p {
+    position: relative;
+    color: white;
+    font-size: 1.5rem;
+    line-height: 1.2em;
+    margin-top: 4.5rem;
+}
+
+@media (min-width: 770px) {
+    .form {
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        gap: 2rem;
+    }
+    .inputWrapper button {
+        width: auto;
+        padding: 1rem 2.5rem;
+    }
+}
+
+@media (min-width: 1260px) {
+   .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+   }
+   .header {
+    text-align: right;
+   }
+   .header,
+   .input-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+   }
+   .form {
+    display: flex;
+    flex-direction: column;
+   }
+}
